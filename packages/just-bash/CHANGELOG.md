@@ -1,5 +1,11 @@
 # just-bash
 
+## 2.14.5
+
+### Patch Changes
+
+- [#214](https://github.com/vercel-labs/just-bash/pull/214) [`da58f4f`](https://github.com/vercel-labs/just-bash/commit/da58f4f523c5e9c1c444106a0f2a7777a59fb618) Thanks [@subsetpark](https://github.com/subsetpark)! - jq: accept control characters inside JSON strings
+
 ## 2.14.4
 
 ### Patch Changes
