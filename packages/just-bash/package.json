@@ -1,14 +1,14 @@
 {
-  "name": "just-bash",
-  "version": "2.14.5",
-  "description": "A simulated bash environment with virtual filesystem",
+  "name": "@code-yeongyu/just-bash",
+  "version": "2.14.5-utf8.0",
+  "description": "A simulated bash environment with virtual filesystem (fork of vercel-labs/just-bash with UTF-8 mojibake fixes pending upstream merge)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vercel-labs/just-bash.git"
+    "url": "git+https://github.com/code-yeongyu/just-bash.git"
   },
-  "homepage": "https://github.com/vercel-labs/just-bash#readme",
+  "homepage": "https://github.com/code-yeongyu/just-bash#readme",
   "bugs": {
-    "url": "https://github.com/vercel-labs/just-bash/issues"
+    "url": "https://github.com/code-yeongyu/just-bash/issues"
   },
   "type": "module",
   "main": "dist/bundle/index.js",
@@ -54,7 +54,8 @@
     "just-bash-shell": "./dist/bin/shell/shell.js"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "rm -rf dist && tsc && pnpm build:lib && pnpm build:lib:cjs && pnpm build:browser && pnpm build:cli && pnpm build:shell && pnpm build:worker && pnpm build:clean && cp dist/index.d.ts dist/index.d.cts && sed '1,/^-->/d' AGENTS.npm.md > dist/AGENTS.md",
